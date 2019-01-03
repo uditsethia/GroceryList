@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardSeelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/listTextName"
+                android:text="@string/itemStr"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/listTextQty"
+                android:text="@string/qtyStr"
+                android:layout_below="@+id/listTextName"
+                android:textSize="14sp"
+                android:paddingTop="5dp"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/Date"
+                android:text="@string/dateStr"
+                android:layout_below="@+id/listTextQty"
+                android:textSize="14sp"
+                android:paddingTop="5dp"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TableRow
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_alignBottom="@+id/Date"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true">
+                <Button
+                    android:id="@+id/editButton"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:drawable/ic_menu_edit"
+                    android:layout_marginEnd="15dp" />
+                <Button
+                    android:id="@+id/deleteButton"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:background="@android:drawable/ic_delete"
+                    />
+            </TableRow>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
